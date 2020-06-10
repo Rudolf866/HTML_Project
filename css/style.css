@@ -759,4 +759,53 @@ textarea, label {
 .cub{
     width: 200px;
     height: 200px;
-}                                                                                                                                                                                                                </div>*/
+}
+
+/***************** *флип-анимация* ***************************/
+.box {
+    background-color: transparent;
+    width: 250px;
+    height: 300px;
+    border: 2px solid black; /*border: 1px solid #eeeeee;*/
+    perspective: 1000px;
+}
+.box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.5s;
+    transform-style: preserve-3d;
+}
+.box:hover .box-inner {
+    transform: rotateY(180deg);
+}
+.box-front, .box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+}
+.box-front {
+    background-image: url('../images/nout1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /*background-color: #cccccc;*/
+    color: #ffffff;
+}
+.box-back {
+    background-color: black;
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+/****************************************************8*/
+#line_block1 {
+    width:220px;
+    height:50px;
+    float:left;
+    margin: 0 15px 15px 0;
+    text-align:center;
+    padding: 10px;
+}
