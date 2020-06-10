@@ -1,0 +1,38 @@
+
+// document.getElementById('hider').onclick = function (){
+//     document.getElementById('hide').style.display = 'none';
+// }
+// function exit(){
+//     let input = document.getElementById('hider');
+//     let div = document.getElementById('hide');
+//     input.onclick = function (){
+//         div.style.display = none;
+//     }
+// }
+// exit();
+// hider.onclick = function(){
+//     document.getElementById('hide').style.display = 'none';
+// }
+// function go() {
+//     alert(document.documentElement);
+//     alert(document.body);
+//     alert(document.documentElement.nodeType);
+//     alert(document.body.lastChild.nodeType);
+// }
+<body>
+<!--<h1>первый заголовок</h1>-->
+<!--<p>Первый абзац</p>-->
+<!--<p>Второй абзац</p>-->
+<!--<input type="button" id="hider" value="нажмите на кнопку">-->
+<!--<div id="hide">Текст</div>-->
+<!--<input type="button" onclick="go()" value="Go"/>-->
+
+</body>
+
+------------------------------------------------------------
+                css - float
+left - Выравнивает элемент по левому краю, а все остальные элементы, вроде текста, обтекают его по правой стороне.
+right - Выравнивает элемент по правому краю, а все остальные элементы обтекают его по левой стороне.
+none - Обтекание элемента не задается.
+inherit - Наследует значение родителя.
+--------------------------------------------------------------------------
