@@ -1,6 +1,6 @@
 
 body {
-    background-image: url('../images/fon2.jpg');
+    background-image: url('../images/fonblack.jpg');
     background-repeat:inherit; /* Наследует значение родителя. */
     background-size: cover;
     font-family: "Libre Baskerville", serif;
@@ -8,19 +8,19 @@ body {
     font-size: 16px;
     line-height: 30px;
     background-color: #0c0f15;
-    color: #ababab;
+
 }
 
 
-h1 {
-     color: red;
-    text-align:center; /*Определяет горизонтальное выравнивание текста в пределах элемента.*/
+.text {
+        color: white;
+        text-align:center; /*Определяет горизонтальное выравнивание текста в пределах элемента.*/
 }
-p{
-    float:left; /* Определяет, по какой стороне будет выравниваться элемент, при этом остальные элементы будут обтекать его с других сторон. Когда значение свойства float равно none, элемент выводится на странице как обычно, при этом допускается, что одна строка обтекающего текста может быть на той же линии, что и сам элемент.  */
-    width:50%;
-    color:green;
-}
+/*p{*/
+/*    float:left; !* Определяет, по какой стороне будет выравниваться элемент, при этом остальные элементы будут обтекать его с других сторон. Когда значение свойства float равно none, элемент выводится на странице как обычно, при этом допускается, что одна строка обтекающего текста может быть на той же линии, что и сам элемент.  *!*/
+/*    width:50%;*/
+/*    color:green;*/
+/*}*/
 input{
     margin-bottom: 10px; /* Устанавливает величину отступа от нижнего края элемента. Отступом является расстояние от внешнего края нижней границы текущего элемента до внутренней границы его родительского элемента  */
     margin-top:10px; /* Устанавливает величину отступа от верхнего края элемента. Отступом является расстояние от внешнего края верхней границы текущего элемента до внутренней границы его родительского элемента */
@@ -765,8 +765,8 @@ textarea, label {
 .box {
     background-color: transparent;
     width: 250px;
-    height: 300px;
-    border: 2px solid black; /*border: 1px solid #eeeeee;*/
+    height: 250px;
+    border: 2px solid red; /*border: 1px solid #eeeeee;*/
     perspective: 1000px;
 }
 .box-inner {
@@ -787,14 +787,14 @@ textarea, label {
     backface-visibility: hidden;
 }
 .box-front {
-    background-image: url('../images/nout1.jpg');
+    /*background-image: url('../images/.jpg');*/
     background-size: cover;
     background-repeat: no-repeat;
     /*background-color: #cccccc;*/
     color: #ffffff;
 }
 .box-back {
-    background-color: black;
+    background-color: white;
     color: white;
     transform: rotateY(180deg);
 }
@@ -808,4 +808,9 @@ textarea, label {
     margin: 0 15px 15px 0;
     text-align:center;
     padding: 10px;
+}
+
+.developer{
+    width: 250px;
+    height: 250px;
 }
